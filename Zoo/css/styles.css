@@ -138,23 +138,26 @@ footer h1{
 }
 
 .infotable {
-    
+    display: inherit;
+}
+.infotablesmall{
+    display: none;
+}
+
+.infotable {
     width: 100%;
     height: 200%;
     border: 3px solid rgb(10, 10, 10);
     border-collapse: collapse;
     text-align: left;
-    
 }
 .infotable td, 
 .infotable th {
     border: 1px solid rgb(10, 10, 10);
     padding: 5px 4px;
-    
 }
 .infotable tbody td {
     padding-left: 15px;
-    
 }
 .infotable thead {
     background: #CFCFCF;
@@ -236,7 +239,6 @@ footer h1{
 }
 /* #endregion contact */
 
-
 /* #region MOBILE */
 @media only screen and (max-width: 700px){
 
@@ -259,6 +261,37 @@ footer h1{
         width: 95%;
         height: auto;
     }
+
+    .welcome{
+        width: 95%;  
+    }
+
+    .deftable tbody td {
+        padding-left: 15px;
+        font-size: 100%;
+    }
+
+    .infotable {
+        display: none;
+    }
+    .infotablesmall{
+        display: inherit;
+        width: 100%;
+        border: 3px solid rgb(10, 10, 10);
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    .infotablesmall td, 
+    .infotablesmall th {
+        border: 1px solid rgb(10, 10, 10);
+        padding: 5px 4px;
+        padding-left: 15px;
+    }
+    .infotablesmall th{
+        background-color: lightgray;
+    }
+
     /* #endregion main*/
 }
 /* #endregion MOBILE */
