@@ -1,0 +1,196 @@
+
+body{
+    font-size: 120%;
+}
+
+/* #region header */
+header nav{
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header li {
+    float: left;
+  }
+
+header li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color:rgb(240, 240, 240);
+  }
+
+header h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 290%;
+}
+
+nav a:first-child{
+    margin-left: 5%;
+}
+
+.aktuell{
+    font-weight: bold;
+}
+/* #endregion header */
+
+/* #region main */
+main{
+    /*  content-box ist der std
+    bei content- box wenn 50% width und dann margin oder padding vergrößern das element
+    daraus folgt das zwei elemente mit 50% plus padding/margin mehr als 100% des platz brauchen.
+    mit border-box funktioniert das da die element dann kleiner werden damit sie nicht mehr als die 50% haben.*/
+    box-sizing: border-box;
+
+    max-width: 62rem;
+    margin: auto;
+    display: flex;
+}
+
+.chickencow{
+    padding: 0.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.chickencow h1{
+    text-align: center;
+    font-size: 150%;
+}
+
+.chickencow ol,
+.chickencow dl{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.infotxt{
+    padding: 0.5rem;
+    width: 50%;
+    text-align: left;
+}
+
+.infotxt h1,
+.infotxt h2{
+    text-align: center;
+    font-size: 150%;
+}
+/*
+#infoquote{
+    font-style: italic;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 1rem;
+}*/
+
+
+/* #region question */
+/* Style inputs with type="text", select elements and textareas */
+.containerquestion input[type=text],
+.containerquestion select,
+.containerquestion textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: lightgray;
+    color: rgb(10, 10, 10);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+/* Add a background color and some padding around the form */
+.containerquestion {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* #endregion main*/
+
+/* #region footer */
+footer{
+    margin-top: 3em;
+    padding: 1em;
+
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
+    display: flex;
+
+    font-weight: normal;
+    font-size: 70%;
+    font-style: italic;
+}
+
+footer h1{
+    font-size: 120%;
+}
+/* #endregion footer */
+
+/* #region MOBILE */
+@media only screen and (max-width: 700px){
+
+    /* #region main */
+    main{
+        display: block;
+        max-width: 99%;
+    }
+
+    .chickencow{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 98%;
+        text-align: center;
+    }
+
+    .infotxt{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 98%;
+        text-align: left;
+    }
+
+    iframe{
+        width: 95%;
+        height: auto;
+    }
+    /* #endregion main*/
+}
+/* #endregion MOBILE */
