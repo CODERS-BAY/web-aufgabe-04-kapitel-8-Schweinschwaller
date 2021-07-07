@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chicken&Cow</title>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navtop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="Video.html">video</a></li>
+                <li><a href="contact.html" class="aktuell">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="h1header">
+            Contact<br>Chicken & Cow
+        </h1>
+    </header>
+
+    <main>
+        <section class="comabt">
+            <h1>Do you wanna contact me?</h1>
+            <p>
+                Here is a small formula for that:
+            </p>
+
+            <div class="containerquestion">
+                <form action="action_page.php">
+
+                    <label for="uname">Name</label>
+                    <input requied type="text" id="uname" name="username" placeholder="Your username..">
+
+                    <label for="email">E-Mail</label>
+                    <input requied type="email" id="email" name="email" placeholder="Your e-mail adress">
+
+                    <label for="kindof">Category</label>
+                    <select id="kindof" name="category">
+                        <option value="Chicken">Chicken</option>
+                        <option value="Cow">Cow</option>
+                        <option value="Info">Info</option>
+                        <option value="unknown">No other category matches</option>
+                    </select>
+
+                    <label for="question">Question</label>
+                    <textarea id="question" name="question" placeholder="Ask something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>made by Georg</h1>
+    </footer>
+
+</body>
+
+</html>
